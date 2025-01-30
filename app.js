@@ -17,7 +17,7 @@ function adicionarAmigo(){
 }
 
 function criarListaDeAmigos(){
-    let listaAmigos = document.querySelector("#resultado");
+    let listaAmigos = document.querySelector("#listaAmigos");
     listaAmigos.innerHTML = "";
     
     for (let i = 0; i < nomeDosAmigos.length; i++){
@@ -30,5 +30,17 @@ function criarListaDeAmigos(){
 
 
 function sortearAmigo(){
+    if (nomeDosAmigos.length == 0){
+        alert("erro: Por favor, adicione um ou mais amigos para serem sorteados");
+    } else {
+        let numeroSorteado = Math.random() * nomeDosAmigos.length;
+        let deixandoNumeroInteiro = Math.floor(numeroSorteado);
+        let amigoSorteado = nomeDosAmigos[deixandoNumeroInteiro];
+        let resultado = document.getElementById("resultado");
+        resultado.innerHTML = "";
+        let nomeSorteado = document.createElement("li");
+        nomeSorteado.textContent = amigoSorteado;
+        resultado.appendChild(nomeSorteado);
+    }
 
 }
