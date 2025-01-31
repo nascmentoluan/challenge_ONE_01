@@ -24,6 +24,4 @@ O bom funcionamento de cada item sorteador de amigos está pautado principalment
 ### Autores
 
 - [@nascmentoluan](https://github.com/nascmentoluan)
-### Deploy
 
-https://challenge-one-01-rho.vercel.app/
